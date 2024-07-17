@@ -2,69 +2,93 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: var(--main-font), monospace;
+  font-family: var(--page-font), monospace;
   background-color: var(--bg-color);
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  min-block-size: 668px;
+  grid-template-rows: repeat(3, min-content);
+  block-size: 100vh;
   min-inline-size: 375px;
   padding: var(--page-padding);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.header::after {
+.decorated-zone::before {
   content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
   width: 25px;
   height: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 10px;
+  bottom: 10px;
   border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
 }
 
-.decorated-zone {
-  position: relative;
+.rec {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  color:#FF0070;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
 }
 
-.decorated-zone::before {
+.rec::after {
   content: "";
   position: absolute;
   width: 9px;
   height: 9px;
   background-color: var(--accent-color);
   border-radius: 5px;
-  top: 18px;
-  right: 18px;
+  top: 8px;
   box-shadow: 0px 0px 4px 2px var(--accent-color);
+  margin-left: 10px;
 }
 
 .header__theme-menu {
-  justify-self: end;
   align-self: center;
+  justify-self: end;
+  padding-block-start: 65px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 13px;
 }
 
 .header__theme-menu-item {
-  color: #FF0070;
+  color: var(--color-menu-item);
   font-size: 18px;
   line-height: 18px;
-  padding: 1.5px 13px;
 }
 
 .header__theme-menu-button {
   background-color: inherit;
   border: none;
   text-transform: lowercase;
+  padding: 3px 13px;
 }
 
 .header__theme-menu-button:focus {
@@ -75,25 +99,29 @@
   border-block-end: 1px solid var(--accent-color);
 }
 
+.header__theme-menu-button_active {
+  outline: 1px solid var(--outline-button-color);
+}
+
 .header__title {
+  min-block-size: 117px;
+  min-inline-size: 355px;
+  padding-block-start: 65px;
+}
+
+.header__title-text {
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
   color: var(--header-title-color);
   text-shadow: 4px 4px 0px var(--shadow);
 }
 
 .header__subtitle {
-  min-block-size: 117px;
-  inline-size: 100%;
-  justify-self: end;
-  align-self: center;
-}
-
-.header__subtitle-text {
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
+  margin-block-start: 56px;
 }
 
 .title-decor {
@@ -116,24 +144,26 @@
   gap: 20px;
 }
 
-.article_heading {
+.article__heading {
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: var(--accent-color);
 }
 
 .article__text {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
 }
 
-.article_list {
+.article__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+}
+
+.article__list-item {
+  display: flex;
 }
 
 .card {
@@ -142,21 +172,17 @@
   gap: 10px;
 }
 
-.article_list-item {
-  display: flex;
-}
-
 .card__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
 }
 
 .card__text {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 23px;
+  line-height: 23.4px;
   color: var(--text-color);
 }
 
@@ -194,6 +220,7 @@
 }
 
 .footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -203,8 +230,8 @@
 
 .footer__title {
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
-  color: #DB00FF;
+  color: var(--color-footer-title);
   text-shadow: 4px 4px 0px var(--shadow);
 }
