@@ -7,7 +7,6 @@
   --page-font: 'IBM Plex Mono';
   --text-color: #F1B2CE;
   --bg-color: #000028;
-  --page-padding: 10px;
   --shadow: #FF0070;
   --link-shadow: #FF0070;
   --title-color: #000028;
@@ -20,10 +19,4 @@
   --rec: block;
   --corner-decorated-zone: #FF0070;
   --color-focus-button: #FF0070;
-}
-
-@media (width >=768px) {
-  :root {
-    --page-padding: 20px;
-  }
 }

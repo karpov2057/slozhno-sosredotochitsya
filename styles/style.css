@@ -13,8 +13,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, min-content);
   height: 100%;
-  min-inline-size: 375px;
-  padding: var(--page-padding);
+  width: 100%;
+  padding: 10px;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -147,7 +147,7 @@
   gap: 50px;
   background-color: var(--bg-color);
   margin-top: 40px;
-  padding: 0 var(--page-padding) 0;
+  padding: 0 10px 0;
   min-inline-size: 375px;
 }
 
@@ -348,9 +348,14 @@
     margin-inline-start: -20px;
   }
 
+  .header {
+    padding: 20px;
+  }
+
   .content {
     gap: 80px;
     margin-top: 60px;
+    padding: 0 20px 0;
   }
 
   .images {
@@ -432,7 +437,7 @@
 
   .article__what-heading {
     inline-size: 30%;
-  } 
+  }
 }
 
 @media (width >= 1024px) {

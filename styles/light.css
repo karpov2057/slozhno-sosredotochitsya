@@ -10,7 +10,6 @@
     --page-font: 'IBM Plex Mono';
     --text-color: #353430;
     --bg-color: #F5F5F5;
-    --page-padding: 10px;
     --shadow: #FF0070;
     --link-shadow: #FF8DCB;
     --title-color: #000028;
@@ -35,7 +34,6 @@
     --page-font: 'IBM Plex Mono';
     --text-color: #353430;
     --bg-color: #F5F5F5;
-    --page-padding: 10px;
     --shadow: #FF0070;
     --link-shadow: #FF8DCB;
     --title-color: #000028;
@@ -48,10 +46,4 @@
     --rec: none;
     --corner-decorated-zone: #353430;
     --color-focus-button: #353430;
-}
-
-@media (width >=768px) {
-  .page.theme_light {
-    --page-padding: 20px;
-  }
 }
