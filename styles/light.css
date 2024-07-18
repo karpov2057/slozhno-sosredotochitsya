@@ -50,10 +50,7 @@
     --color-focus-button: #353430;
 }
 
-@media (width<=768px) {
-  :root {
-    --page-padding: 20px;
-  }
+@media (width >=768px) {
   .page.theme_light {
     --page-padding: 20px;
   }

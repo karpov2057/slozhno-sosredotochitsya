@@ -4,6 +4,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--page-font), monospace;
   background-color: var(--bg-color);
+  background-attachment: fixed;
 }
 
 .header {
@@ -11,7 +12,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, min-content);
-  block-size: 100%;
+  height: 100%;
   min-inline-size: 375px;
   padding: var(--page-padding);
   background-image: var(--bg-image);
@@ -447,9 +448,6 @@
 
   .header__title {
     padding-block-start: 274px;
-  }
-
-  .header__title {
     gap: 114px;
   }
 
