@@ -3,10 +3,58 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+@media (prefers-color-scheme: light) {
+    
+  :root {
+    --accent-color: #FF8DCB;
+    --page-font: 'IBM Plex Mono';
+    --text-color: #353430;
+    --bg-color: #F5F5F5;
+    --page-padding: 10px;
+    --shadow: #FF0070;
+    --link-shadow: #FF8DCB;
+    --title-color: #000028;
+    --color-article-heading: #353430;
+    --header-title-color: #FFC2E6;
+    --bg-image: url(../images/cover-image-light.png);
+    --outline-button-color: #353430;
+    --color-menu-item: #353430;
+    --color-footer-title: #FFC2E6;
+    --rec: none;
+    --corner-decorated-zone: #353430;
+    --color-focus-button: #353430;
+  }
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --accent-color: #FF8DCB;
+    --page-font: 'IBM Plex Mono';
+    --text-color: #353430;
+    --bg-color: #F5F5F5;
+    --page-padding: 10px;
+    --shadow: #FF0070;
+    --link-shadow: #FF8DCB;
+    --title-color: #000028;
+    --color-article-heading: #353430;
+    --header-title-color: #FFC2E6;
+    --bg-image: url(../images/cover-image-light.png);
+    --outline-button-color: #353430;
+    --color-menu-item: #353430;
+    --color-footer-title: #FFC2E6;
+    --rec: none;
+    --corner-decorated-zone: #353430;
+    --color-focus-button: #353430;
+}
+
+@media (width<=768px) {
+  :root {
+    --page-padding: 20px;
+  }
+  .page.theme_light {
+    --page-padding: 20px;
+  }
 }
