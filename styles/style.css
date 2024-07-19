@@ -318,6 +318,7 @@
   justify-content: center;
   align-items: center;
   block-size: 100vh;
+  min-block-size: 668px;
   margin-block-start: 40px;
 }
 
