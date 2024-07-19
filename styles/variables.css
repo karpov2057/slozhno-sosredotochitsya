@@ -4,7 +4,7 @@
 */
 :root {
   --accent-color: #FF0070;
-  --page-font: 'IBM Plex Mono';
+  --page-font: 'IBM Plex Mono', monospace;
   --text-color: #F1B2CE;
   --bg-color: #000028;
   --shadow: #FF0070;
@@ -15,6 +15,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --outline-button-color: #FF0070;
   --color-menu-item: #FF0070;
+  --color-button-hover: rgb(255 0 112 / 40%);
   --color-footer-title: #DB00FF;
   --rec: block;
   --corner-decorated-zone: #FF0070;

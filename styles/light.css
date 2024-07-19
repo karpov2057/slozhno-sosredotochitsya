@@ -7,9 +7,9 @@
     
   :root {
     --accent-color: #FF8DCB;
-    --page-font: 'IBM Plex Mono';
+    --page-font: 'IBM Plex Mono', monospace;
     --text-color: #353430;
-    --bg-color: #F5F5F5;
+    --bg-color: #FFF1F7;
     --shadow: #FF0070;
     --link-shadow: #FF8DCB;
     --title-color: #000028;
@@ -18,6 +18,7 @@
     --bg-image: url(../images/cover-image-light.png);
     --outline-button-color: #353430;
     --color-menu-item: #353430;
+    --color-button-hover: rgb(50 49 45 / 40%);
     --color-footer-title: #FFC2E6;
     --rec: none;
     --corner-decorated-zone: #353430;
@@ -31,9 +32,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     --accent-color: #FF8DCB;
-    --page-font: 'IBM Plex Mono';
+    --page-font: 'IBM Plex Mono', monospace;
     --text-color: #353430;
-    --bg-color: #F5F5F5;
+    --bg-color: #FFF1F7;
     --shadow: #FF0070;
     --link-shadow: #FF8DCB;
     --title-color: #000028;
@@ -42,6 +43,7 @@
     --bg-image: url(../images/cover-image-light.png);
     --outline-button-color: #353430;
     --color-menu-item: #353430;
+    --color-button-hover: rgb(50 49 45 / 40%);
     --color-footer-title: #FFC2E6;
     --rec: none;
     --corner-decorated-zone: #353430;
